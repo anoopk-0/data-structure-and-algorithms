@@ -87,6 +87,6 @@ forEach/map/filter/reduce - O(n)
 
 Calculation not dependens on input size - O(1)
 
-1 loop - O(n)
-2 nested loops - O(n^2)
+=> 1 loop - O(n)
+=> 2 nested loops - O(n^2)
 \*\* input size reduced by half - O(logn)

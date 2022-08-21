@@ -89,4 +89,20 @@ Calculation not dependens on input size - O(1)
 
 => 1 loop - O(n)
 => 2 nested loops - O(n^2)
-\*\* input size reduced by half - O(logn)
+\*\* input size reduced by half -
+
+# Algorithm design techniques
+
+1. Bruce force: simple and exhaustive technique that evaluate evry possible outcome to find the best soln: Ex: linear search
+2. Greedy: choose the best option at the current time, without any considration for the future. ex: dijkstra's algo, prim's algo and kruskal's algo
+3. divide and conqure: divide the problem into smaller sub-problem. each sub problem is then solved and the partial soln are recombined to determine the overall soln. ex: binary search, quick sort, merge sort and tower of hanoi
+4. dynamice programming": divide the problem into smaller sub problem. break it down into smaller but overlapping sub problem. store the result and resuse it for the same sub-problem. this is call memorization and is a optization technique that improve the time complexity of algo. ex: fib number and climbing staircase.
+
+# Next step
+
+some more problem:
+
+- finding the GCD using euclidian algo
+- finding permutation and combination of the list of number
+- finding the longest common substring in a given string
+- knapsack problem

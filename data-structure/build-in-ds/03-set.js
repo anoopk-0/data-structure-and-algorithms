@@ -10,6 +10,9 @@
  *      - Array can contain duplicate values whereas sets cannot
  *      - Insertion order is maintained in arrays but it is not the case with sets
  *      - searching and deleting an element in set is faster as compared to array
+ *
+ *
+ * keys and values in the Set are identical.
  */
 
 const set = new Set([1, 2, 4]);

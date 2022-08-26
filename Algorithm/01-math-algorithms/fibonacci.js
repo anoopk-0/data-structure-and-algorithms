@@ -10,7 +10,7 @@ fibonacci(5): 0, 1, 1, 2, 3, 5
 ..
 */
 
-//Normal Loop soln
+//Normal Loop solution
 function fibonacci(n) {
   let fib = [0, 1];
   for (let i = 2; i < n; i++) {

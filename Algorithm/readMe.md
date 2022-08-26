@@ -83,7 +83,7 @@ push/pop - O(1)
 shift/unshit/concat/slice/splice - O(n)
 forEach/map/filter/reduce - O(n)
 
-# Big O Guide
+IMP # Big O Guide
 
 Calculation not dependens on input size - O(1)
 

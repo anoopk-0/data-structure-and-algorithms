@@ -30,7 +30,7 @@ class Stack {
   }
 
   pop() {
-    return this.items.push();
+    return this.items.pop();
   }
 
   peek() {

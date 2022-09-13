@@ -12,3 +12,10 @@ Example:
 DOM: tree data structure
 Browser back and forward: stack
 OS job scheduling: Queue
+
+Further learning
+
+- priority queue
+- circular linked list
+- directed acyclic graphs
+- prim's, kruskal's and floyd's algorithms

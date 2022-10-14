@@ -6,19 +6,19 @@
  *
  * :Never use, it's a poor algo to sort
  *
- * psudoCode
- * 1. indentify the pivot element in the array
+ * pseudoCode
+ * 1. identify the pivot element in the array
  *         - pick first element in the array
  *         - last element
- *         - randmon element
+ *         - random element
  *         - median/ middle element
  *
  * 2. put everything that's smaller than pivot into a left array and everything that's greater than the pivot into a right array
- * 3. repeact the process for the individual 'left' and right array till you hava an array of lenth 1. which is sorted by defination
+ * 3. respect the process for the individual 'left' and right array till you have an array of length 1. which is sorted by definition
  * 4. repeatedly concatenate the left array, pivot and right array till one sorted array remains
  */
 
-function qucikSort(arr) {
+function quickSort(arr) {
   if (arr.length < 2) return arr;
 
   let pivot = arr[arr.length - 1];
@@ -33,8 +33,8 @@ function qucikSort(arr) {
     }
   }
 
-  return [...qucikSort(leftArr), pivot, ...qucikSort(rightArr)];
+  return [...quickSort(leftArr), pivot, ...quickSort(rightArr)];
 
   //worst case : O(n^2) : when the array is already sorted...
-  //best case:  O(nlogn)
+  //best case:  O(n log n): average case
 }

@@ -1,6 +1,6 @@
 /**
  * Problem: Given two finite non-empty set, find their cartesian product..
- * In mathematics, spectically set theory, the cartesian product of two sets A and B, denoted AxB, is the set of all ordered pair(a,b) where a is in A and b is in B.
+ * In mathematics, specially set theory, the cartesian product of two sets A and B, denoted AxB, is the set of all ordered pair(a,b) where a is in A and b is in B.
  *
  * const A= [1,2];
  * const B = [3,4]

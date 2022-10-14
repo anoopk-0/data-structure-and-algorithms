@@ -5,7 +5,7 @@
  * n=2, climbingStaircase(1) = 2    |  (1,1) or (2)
  * n=3, climbingStaircase(1) = 3    |  (1,1,1),(1,2),(2,1)
  *
- * psudoCode
+ * pseudoCode
  * At any given time, you can climb either 1 or 2 steps
  * if you have to climb to step 'n', we can only climb from step 'n-1' or 'n-2'
  * calc the ways we can climb to 'n-1' and 'n-2' steps and add the two

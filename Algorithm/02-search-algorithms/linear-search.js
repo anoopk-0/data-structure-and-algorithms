@@ -4,9 +4,9 @@
  * arr = [-5,2,10,4,6]=> 10, should return 2(as the index)
  * arr = [-5,2,10,4,6]=> 20, should return -1(as the index)
  *
- * pseduocode:
+ * pseudocode:
  * start at the first element in the array and move towards the last.
- * At each elemenet though, check if the element is equal to the target element.
+ * At each element though, check if the element is equal to the target element.
  * if element found, return the index of the element.
  */
 
@@ -20,6 +20,18 @@ function linearSearch(arr, x) {
   return -1;
 }
 
-//recursive approuch
+//recursive approach
+function LinearSearchRecursively(ArrayGiven, x, i) {
+  const arrayLength = ArrayGiven.length;
 
-function _linearSearch(arr, x) {}
+  if (i > arrayLength - 1) {
+    return -1;
+  }
+  if (ArrayGiven[i] === x) {
+    return i;
+  }
+  return LinearSearchRecursively(ArrayGiven, x, i + 1);
+}
+
+const testArray = [1, 2, 3, 4, 5, 6, 7];
+console.log(`Element index : ${LinearSearchRecursively(testArray, 7, 0)}`);

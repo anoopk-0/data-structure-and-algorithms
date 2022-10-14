@@ -6,8 +6,8 @@
  *
  * :Never use, it's a poor algo to sort
  *
- * psudoCode
- * virtually split the arry into a sorted and unsorted part
+ * pseudoCode
+ * virtually split the array into a sorted and unsorted part
  * assume that the first element is ready sorted and remaining elements are unsorted.
  * select an unsorted element and compare with all the element in the sorted part.
  * if the element in the sorted part is smaller than the selected element, proceed to the next element in the unsorted part. else, shift larger elements in the sorted part towards the right.

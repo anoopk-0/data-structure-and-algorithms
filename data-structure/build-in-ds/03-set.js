@@ -15,26 +15,44 @@
  * keys and values in the Set are identical.
  */
 
-const set = new Set([1, 2, 4]);
+const mySet1 = new Set();
 
-//to add new element
-set.add(5);
+mySet1.add(1); // Set [ 1 ]
+mySet1.add(5); // Set [ 1, 5 ]
+mySet1.add(5); // Set [ 1, 5 ]
+mySet1.add("some text"); // Set [ 1, 5, 'some text' ]
+const o = { a: 1, b: 2 };
+mySet1.add(o);
 
-//the duplicate value is ignored
-set.add(4);
+mySet1.add({ a: 1, b: 2 }); // o is referencing a different object, so this is okay
 
-// to check if the value exist
-set.has(4);
+mySet1.has(1); // true
+mySet1.has(3); // false, since 3 has not been added to the set
+mySet1.has(5); // true
+mySet1.has(Math.sqrt(25)); // true
+mySet1.has("Some Text".toLowerCase()); // true
+mySet1.has(o); // true
 
-//delete
-set.delete(2);
+mySet1.size; // 5
 
-//number
-set.size;
+mySet1.delete(5); // removes 5 from the set
+mySet1.has(5); // false, 5 has been removed
 
-//delete all the element in the set
-set.clear();
-
-for (let item of set) {
+mySet1.size; // 4, since we just removed one value
+// logs the elements in insertion order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}, 5
+for (const item of mySet1.keys()) {
   console.log(item);
 }
+
+// logs the elements in insertion order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}, 5
+for (const item of mySet1.values()) {
+  console.log(item);
+}
+
+// logs the elements in insertion order: 1, "some text", {"a": 1, "b": 2}, {"a": 1, "b": 2}, 5
+// (key and value are the same here)
+for (const [key, value] of mySet1.entries()) {
+  console.log(key);
+};
+
+IMP => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set

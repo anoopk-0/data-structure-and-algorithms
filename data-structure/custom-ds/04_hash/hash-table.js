@@ -22,8 +22,8 @@
  *  - remove to delete a key value pair
  *
  * Application:
- * - hash table are typically implemented where constant time lookup and insertion are required.
- *  example:
+ * - IMP: hash table are typically implemented where constant time lookup and insertion are required.
+ *v
  *     - Database indexing
  *     - Caches
  */
@@ -52,7 +52,7 @@ class HashTable {
     } else {
       const sameKeyItem = bucket.find((item) => item[0] === key);
       if (sameKeyItem) {
-        sameKeyItem[i] = value;
+        sameKeyItem[1] = value;
       } else {
         bucket.push([key, value]);
       }
@@ -75,7 +75,7 @@ class HashTable {
 
   remove(key) {
     const index = this.hash(key);
-    // this.table[index] = null;
+    // this.table[index] = undefined;
     const bucket = this.table[index];
     if (!bucket) {
       const sameKeyItem = bucket.find((item) => item[0] === key);

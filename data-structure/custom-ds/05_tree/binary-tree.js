@@ -55,7 +55,6 @@ class BinarySearchTree {
   }
 
   //insertion
-
   insertion(value) {
     const node = new Node(value);
     if (this.isEmpty()) {

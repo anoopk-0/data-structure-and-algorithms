@@ -8,7 +8,7 @@
  *
  * Pseudocode
  * if the array is empty, return -1 as the element cannot be found.
- * if the array has elements, find the middle element in the array. if the target is equal to the middle element, return the middle element index.
+ * if the array has elements, find the middle element in the array. if the target is equal to the middle element, return the    middle element index.
  * if target is less than the middle element, binary search left half of the array.
  * if target is greater than the middle element, binary search right half of the array.
  */

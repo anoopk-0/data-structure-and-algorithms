@@ -53,6 +53,6 @@ for (const item of mySet1.values()) {
 // (key and value are the same here)
 for (const [key, value] of mySet1.entries()) {
   console.log(key);
-};
+}
 
-IMP => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+//IMP => https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set

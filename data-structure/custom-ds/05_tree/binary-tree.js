@@ -135,7 +135,7 @@ class BinarySearchTree {
     if (!root.right) {
       return root.value;
     } else {
-      return this.min(root.right);
+      return this.max(root.right);
     }
   }
 
@@ -164,5 +164,35 @@ class BinarySearchTree {
 
   delete(value) {
     this.root = this.deleteNode(this.root, value);
+  }
+
+  findDepth(node = this.root) {
+    if (!node) {
+      return 0;
+    }
+
+    const leftDepth = this.findDepth(node.left);
+    const rightDepth = this.findDepth(node.right);
+
+    return Math.max(leftDepth, rightDepth) + 1;
+  }
+
+  findDepthOfNode(value, node = this.root, depth = 0) {
+    if (!node) {
+      return -1; // Node not found
+    }
+
+    if (node.value === value) {
+      return depth;
+    }
+
+    const leftDepth = this.findDepthOfNode(value, node.left, depth + 1);
+    const rightDepth = this.findDepthOfNode(value, node.right, depth + 1);
+
+    if (leftDepth !== -1) {
+      return leftDepth;
+    } else {
+      return rightDepth;
+    }
   }
 }

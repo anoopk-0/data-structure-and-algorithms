@@ -20,14 +20,15 @@ function linearSearch(arr, x) {
   return -1;
 }
 
-//recursive approach
-function LinearSearchRecursively(ArrayGiven, x, i) {
+//recursive approach: it also have the same time complexity, so their is no point solving a linear search by recursion.
+
+function LinearSearchRecursively(ArrayGiven, target, i) {
   const arrayLength = ArrayGiven.length;
 
   if (i > arrayLength - 1) {
     return -1;
   }
-  if (ArrayGiven[i] === x) {
+  if (ArrayGiven[i] === target) {
     return i;
   }
   return LinearSearchRecursively(ArrayGiven, x, i + 1);

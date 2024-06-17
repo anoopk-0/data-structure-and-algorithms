@@ -29,4 +29,4 @@ function mergeSort(arr) {
   return merge(mergeSort(leftArr), mergeSort(rightArr));
 }
 
-//best complexity:  O(nlogn)
+//best complexity:  O(n log n)

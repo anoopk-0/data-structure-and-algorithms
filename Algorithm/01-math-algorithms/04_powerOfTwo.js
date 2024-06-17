@@ -1,5 +1,5 @@
 /*
-Giver a +ve 'n', determine if the number is a power of 2 or not. An interger is a power of two if there exists an integer 'x' such that 'n' === 2^x
+Giver a +ve 'n', determine if the number is a power of 2 or not. An integer is a power of two if there exists an integer 'x' such that 'n' === 2^x
 
 isPowerOfTwo(1) = true(2^0)
 isPowerOfTwo(2) = true(2^1)

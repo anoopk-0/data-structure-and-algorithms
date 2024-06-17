@@ -4,9 +4,9 @@ Recursion is when a function call itself.
 breaking down your problem into smaller versions of the same problem, recursion is very useful.
 
 IMP:
-Every recursion soln need to have a base case - a condition to terminate the recursion.
+Every recursion solution need to have a base case - a condition to terminate the recursion.
 
-Recursion might simplify solving a problem but it does not always translate to a faster solution. A recursive soln maybe far worse compare to a iterative soln.
+Recursion might simplify solving a problem but it does not always translate to a faster solution. A recursive solution maybe far worse compare to a iterative solution.
 */
 
 //FIbonacci sequence
@@ -17,7 +17,7 @@ function _fibonacci(n) {
   }
   return _fibonacci(n - 1) + _fibonacci(n - 2);
 }
-// Big-O = O(2^n), which is not a good soln.
+// Big-O = O(2^n), which is not a good solution.
 
 function _factorial(n) {
   if (n === 0) {

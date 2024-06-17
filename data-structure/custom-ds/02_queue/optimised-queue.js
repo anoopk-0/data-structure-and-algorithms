@@ -8,13 +8,13 @@ class Queue {
     this.items = {};
 
     //as object a unordered list, need array like pointer
-    this.rare = 0;
+    this.rear = 0;
     this.front = 0;
   }
 
   enqueue(item) {
-    this.items[this.rare] = item;
-    this.rare++;
+    this.items[this.rear] = item;
+    this.rear++;
   }
 
   dequeue() {
@@ -26,7 +26,7 @@ class Queue {
   }
 
   isEmpty() {
-    return this.rare - this.front === 0;
+    return this.rear - this.front === 0;
   }
 
   peek() {
@@ -34,7 +34,7 @@ class Queue {
   }
 
   size() {
-    return this.rare - this.front;
+    return this.rear - this.front;
   }
 
   print() {

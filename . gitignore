@@ -1,3 +1,26 @@
 .DS_Store
 
 */.DS_Store
+
+DSA patterns 
+
+1. Fast and Slow Pointer
+2. Merge Intervals
+3. Sliding Window
+4. Islands (Matrix Traversal)
+5. Two Pointers
+6. Cyclic Sort
+7. In-place Reversal of LinkedIn List
+8. Breadth First Search
+9. Depth First Search
+10. Two Heaps
+11. Subsets
+12. Modified Binary Search
+13. Bitwise XOR
+14. Top 'K' Elements
+15. K-way Merge
+16. 0/1 Knapsack (Dynamic Programming)
+17. Unbounded Knapsack (Dynamic Programming)
+18. Topological Sort (Graphs)
+19. Monotonic Stack
+20. Backtracking
